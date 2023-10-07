@@ -1,6 +1,6 @@
 # COMP90015-Distributed-System Assignment 1 - Multi-thread Dictionary Server
 ### Configuration
-1. Download the zip with the name of the jar files, and unzip it, all supporting files to run the system already in the package code.
+1. Download the zip with the name of the jar files from folder "Assignement1 Submission", and unzip it, all supporting files to run the system already in the package code.
 2. Then right-click the package code to build two terminals in this directory.
 ### Execute the system
 -	Execute the Server
