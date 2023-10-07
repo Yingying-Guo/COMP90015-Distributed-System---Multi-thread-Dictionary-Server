@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="505.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.Client.ClientController">
+   <children>
+      <Text layoutX="25.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input a word:" />
+      <TextField fx:id="TextField_word" layoutX="114.0" layoutY="180.0" prefHeight="23.0" prefWidth="283.0" />
+      <Text layoutX="25.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input meaning(s) of word here if you have:" wrappingWidth="304.890625" />
+      <TextArea fx:id="TextArea_result" editable="false" layoutX="25.0" layoutY="350.0" prefHeight="141.0" prefWidth="375.0" />
+      <TextField fx:id="TextField_meanings" layoutX="25.0" layoutY="236.0" prefHeight="23.0" prefWidth="375.0" />
+      <Button fx:id="Button_Add" layoutX="276.0" layoutY="279.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
+      <Button fx:id="Button_Remove" layoutX="334.0" layoutY="279.0" mnemonicParsing="false" onAction="#onRemoveButtonClick" text="Remove" />
+      <Button fx:id="Button_Query" layoutX="210.0" layoutY="279.0" mnemonicParsing="false" onAction="#onQueryButtonClick" text="Query" />
+      <Text layoutX="25.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click operations:" wrappingWidth="101.962890625" />
+      <Text layoutX="25.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result:" />
+      <Text layoutX="25.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Dictionary">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At here, you can:">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Query the meaning(s) of a given word" wrappingWidth="294.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Add a new word with meanings">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Remove an existing word ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
