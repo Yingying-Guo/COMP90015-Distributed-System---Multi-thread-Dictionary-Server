@@ -1,6 +1,5 @@
 package model.Server;
 
-//import model.Client.ClientApplication;
 import model.DictionaryException;
 
 import javax.net.ServerSocketFactory;
@@ -132,7 +131,7 @@ class ClientHandler extends Thread {
     public void run() {
         try {
             this.out = new BufferedWriter(new OutputStreamWriter(this.clientSocket.getOutputStream()));
-            this.in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            this.in = new BufferedReader(new InputStreamReader(this.clientSocket.getInputStream()));
 
             String requestLine = null;
             while ((requestLine = this.in.readLine()) != null) {
@@ -182,9 +181,9 @@ class ClientHandler extends Thread {
                 }
 
             }
-            in.close();
-            out.close();
-            clientSocket.close();
+            this.in.close();
+            this.out.close();
+            this.clientSocket.close();
         } catch (IOException e) {
             System.out.println("Connection fail");
         } catch (DictionaryException e) {
